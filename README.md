@@ -5,8 +5,8 @@ Dieses Repository enthält zwei spezialisierte Tools zur Generierung von TTL-Dat
 ## 📋 Übersicht
 
 ### Tools:
-1. **`esco_skills_ttl_generator.py`** - Generiert TTL für ESCO Skills/Kompetenzen
-2. **`esco_occupations_ttl_generator.py`** - Generiert TTL für ESCO Berufe/Occupations
+1. **`generate_esco_skills_ttl.py`** - Generiert TTL für ESCO Skills/Kompetenzen
+2. **`generate_esco_occupations_ttl.py`** - Generiert TTL für ESCO Berufe/Occupations
 
 ### Datenquelle:
 - **ESCO Portal**: https://esco.ec.europa.eu/de/use-esco/download
@@ -21,23 +21,6 @@ Dieses Repository enthält zwei spezialisierte Tools zur Generierung von TTL-Dat
 
 ### Beschreibung:
 Konvertiert ESCO v1.2.0 Skills/Kompetenzen CSV-Daten in saubere, SKOS-konforme TTL-Dateien.
-
-### Eingabedateien:
-```
-ESCO dataset - v1.2.0 - classification - de - csv/
-├── skills_de.csv                           # Hauptdatei mit allen Skills
-├── transversalSkillsCollection_de.csv      # Transversale Skills
-├── languageSkillsCollection_de.csv         # Sprachkompetenzen
-├── digitalSkillsCollection_de.csv          # Digitale Skills
-├── greenSkillsCollection_de.csv            # Grüne Skills
-├── researchSkillsCollection_de.csv         # Forschungskompetenzen
-└── broaderRelationsSkillPillar_de.csv      # Hierarchische Beziehungen
-```
-
-### Verwendung:
-```bash
-python esco_skills_ttl_generator.py "ESCO dataset - v1.2.0 - classification - de - csv" esco_skills_v1.2.0.ttl
-```
 
 ### Ausgabe:
 - **TTL-Datei**: Saubere SKOS-Struktur mit w3id.org URIs
@@ -59,18 +42,6 @@ python esco_skills_ttl_generator.py "ESCO dataset - v1.2.0 - classification - de
 
 ### Beschreibung:
 Konvertiert ESCO v1.2.0 Occupations/Berufe CSV-Daten in saubere, SKOS-konforme TTL-Dateien.
-
-### Eingabedateien:
-```
-ESCO dataset - v1.2.0 - classification - de - csv/
-├── occupations_de.csv                      # Hauptdatei mit allen Berufen
-└── researchOccupationsCollection_de.csv    # Forschungsberufe
-```
-
-### Verwendung:
-```bash
-python esco_occupations_ttl_generator.py "ESCO dataset - v1.2.0 - classification - de - csv" esco_occupations_v1.2.0.ttl
-```
 
 ### Ausgabe:
 - **TTL-Datei**: Saubere SKOS-Struktur mit w3id.org URIs
